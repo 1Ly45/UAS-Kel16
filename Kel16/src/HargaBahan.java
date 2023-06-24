@@ -4,7 +4,7 @@
  */
 
 /**
- *
+ *s
  * @author HP
  */
 public class HargaBahan extends Bahan implements FillingAndTopping{
@@ -68,22 +68,22 @@ public class HargaBahan extends Bahan implements FillingAndTopping{
     }
 
     @Override
-    public int RedBean() {
+    public int redBean() {
         return 25000;
     }
 
     @Override
-    public int Sosis() {
+    public int sosis() {
         return 80000;
     }
 
     @Override
-    public int SmokeBeef() {
+    public int smokeBeef() {
         return 90000;
     }
 
     @Override
-    public int BawangBombay() {
+    public int bawangBombay() {
         return 40000;
     }
     

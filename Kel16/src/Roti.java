@@ -8,7 +8,6 @@
  * @author HP
  */
 public abstract class Roti extends Bahan{
-    int jumlah;
-    
+    //total berat dari satu adonan
     abstract int totalBerat();
 }

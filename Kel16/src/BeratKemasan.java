@@ -66,22 +66,22 @@ public class BeratKemasan extends Bahan implements FillingAndTopping {
     }
 
     @Override
-    public int RedBean() {
+    public int redBean() {
         return 500;
     }
 
     @Override
-    public int Sosis() {
+    public int sosis() {
         return 1000;
     }
 
     @Override
-    public int SmokeBeef() {
+    public int smokeBeef() {
         return 1000;
     }
 
     @Override
-    public int BawangBombay() {
+    public int bawangBombay() {
         return 500;
     }
     

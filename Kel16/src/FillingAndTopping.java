@@ -8,12 +8,13 @@
  * @author HP
  */
 public interface FillingAndTopping{
+    //filling dan topping dari roti
     int keju();
     int coklat();
     int krimVanila();
-    int RedBean();
-    int Sosis();
-    int SmokeBeef();
-    int BawangBombay();
+    int redBean();
+    int sosis();
+    int smokeBeef();
+    int bawangBombay();
     
 }

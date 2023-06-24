@@ -7,11 +7,7 @@
  *
  * @author HP
  */
-public abstract class Roti {
-    //attribute jumlah produk
-    int jumlah;
-    
-    
+public abstract class Bahan{
     //abstract method untuk bahan bahan roti
     abstract int tepungTerigu();
     abstract int gulaPasir();
@@ -21,6 +17,5 @@ public abstract class Roti {
     abstract int susuCair();
     abstract int telur();
     abstract int esBatu();
-    abstract int totalBerat();
 }
 

@@ -1,91 +1,88 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 
 /**
  *
  * @author HP
  */
-public class HargaBahan extends Bahan implements FillingAndTopping{
-    //Harga Bahan
-    
+public class BeratKemasan extends Bahan implements FillingAndTopping {
+    //berat kemasan dari bahan
     @Override
     int tepungTerigu() {
-        return 40000;
+        return 1000;
     }
 
     @Override
     int gulaPasir() {
-        return 25000;
+        return 1000;
     }
 
     @Override
     int butter() {
-        return 23000;
+        return 500;
     }
-
+    
     @Override
     int ragi() {
-        return 5000;
+        return 11;
     }
 
     @Override
     int susuBubuk() {
-        return 39000;
+        return 1000;
     }
 
     @Override
     int susuCair() {
-        return 24000;
+        return 1000;
     }
 
     @Override
     int telur() {
-        return 23000;
+        return 1000;
     }
-
+    
     @Override
     int esBatu() {
-        return 2000;
+        return 1000;
     }
-    
-    
-    //Harga filling dan topping
+
+    //Berat kemasan dari filling dan Topping
     @Override
     public int keju() {
-        return 31000;
+        return 250;
     }
 
     @Override
     public int coklat() {
-        return 29000;
+        return 500;
     }
 
     @Override
     public int krimVanila() {
-        return 30000;
+        return 500;
     }
 
     @Override
     public int RedBean() {
-        return 25000;
+        return 500;
     }
 
     @Override
     public int Sosis() {
-        return 80000;
+        return 1000;
     }
 
     @Override
     public int SmokeBeef() {
-        return 90000;
+        return 1000;
     }
 
     @Override
     public int BawangBombay() {
-        return 40000;
+        return 500;
     }
-    
     
 }

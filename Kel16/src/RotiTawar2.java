@@ -7,6 +7,9 @@
  *
  * @author HP
  */
-public class RotiTawar2 {
+public class RotiTawar2 extends RotiTawar {
     
+    int keju (){
+        return 80;
+    }
 }

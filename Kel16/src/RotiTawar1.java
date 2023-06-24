@@ -7,6 +7,11 @@
  *
  * @author HP
  */
-public class RotiTawar1 {
+public class RotiTawar1 extends RotiTawar {
     
+    int Coklat(){
+      return 80;  
+    
+}
+
 }

@@ -7,6 +7,52 @@
  *
  * @author HP
  */
-public class RotiTawar {
+public class RotiTawar extends Roti{
+
+    @Override
+    int totalBerat() {
+        return 2065;
+    }
+
+    @Override
+    int tepungTerigu() {
+    return 1000;
+    }
+
+    @Override
+    int gulaPasir() {
+    return 125;
+    }
+
+    @Override
+    int butter() {
+    return 100;
+    }
+
+    @Override
+    int ragi() {
+   return 20;
+    }
+
+    @Override
+    int susuBubuk() {
+    return 250;
+    }
+
+    @Override
+    int susuCair() {
+    return 200;
+    }
+
+    @Override
+    int telur() {
+   return 70;
+    }
+
+    @Override
+    int esBatu() {
+    return 300;
+    }
+    
     
 }

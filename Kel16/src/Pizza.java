@@ -9,4 +9,19 @@
  */
 public class Pizza {
     
+    int keju(){
+        return 30;
+    }
+    
+    int Sosis(){
+        return 50;
+    }
+    
+    int SmokeBeef(){
+        return 50;
+    }
+    
+    int BawangBombay(){
+        return 30;
+    }
 }

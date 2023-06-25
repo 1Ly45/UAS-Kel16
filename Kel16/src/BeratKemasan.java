@@ -10,78 +10,78 @@
 public class BeratKemasan extends Bahan implements FillingAndTopping {
     //berat kemasan dari bahan
     @Override
-    int tepungTerigu() {
+    double tepungTerigu() {
         return 1000;
     }
 
     @Override
-    int gulaPasir() {
+    double gulaPasir() {
         return 1000;
     }
 
     @Override
-    int butter() {
+    double butter() {
         return 500;
     }
     
     @Override
-    int ragi() {
+    double ragi() {
         return 11;
     }
 
     @Override
-    int susuBubuk() {
+    double susuBubuk() {
         return 1000;
     }
 
     @Override
-    int susuCair() {
+    double susuCair() {
         return 1000;
     }
 
     @Override
-    int telur() {
+    double telur() {
         return 1000;
     }
     
     @Override
-    int esBatu() {
+    double esBatu() {
         return 1000;
     }
 
     //Berat kemasan dari filling dan Topping
     @Override
-    public int keju() {
+    public double keju() {
         return 250;
     }
 
     @Override
-    public int coklat() {
+    public double coklat() {
         return 500;
     }
 
     @Override
-    public int krimVanila() {
+    public double krimVanila() {
         return 500;
     }
 
     @Override
-    public int redBean() {
+    public double redBean() {
         return 500;
     }
 
     @Override
-    public int sosis() {
+    public double sosis() {
         return 1000;
     }
 
     @Override
-    public int smokeBeef() {
+    public double smokeBeef() {
         return 1000;
     }
 
     @Override
-    public int bawangBombay() {
+    public double bawangBombay() {
         return 500;
     }
     

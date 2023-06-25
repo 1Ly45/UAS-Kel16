@@ -9,13 +9,13 @@
  */
 public abstract class Bahan{
     //abstract method untuk bahan bahan roti
-    abstract int tepungTerigu();
-    abstract int gulaPasir();
-    abstract int butter();
-    abstract int ragi();
-    abstract int susuBubuk();
-    abstract int susuCair();
-    abstract int telur();
-    abstract int esBatu();
+    abstract double tepungTerigu();
+    abstract double gulaPasir();
+    abstract double butter();
+    abstract double ragi();
+    abstract double susuBubuk();
+    abstract double susuCair();
+    abstract double telur();
+    abstract double esBatu();
 }
 

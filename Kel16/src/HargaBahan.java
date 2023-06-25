@@ -11,79 +11,79 @@ public class HargaBahan extends Bahan implements FillingAndTopping{
     //Harga Bahan
     
     @Override
-    int tepungTerigu() {
+    double tepungTerigu() {
         return 40000;
     }
 
     @Override
-    int gulaPasir() {
+    double gulaPasir() {
         return 25000;
     }
 
     @Override
-    int butter() {
+    double butter() {
         return 23000;
     }
 
     @Override
-    int ragi() {
+    double ragi() {
         return 5000;
     }
 
     @Override
-    int susuBubuk() {
+    double susuBubuk() {
         return 39000;
     }
 
     @Override
-    int susuCair() {
+    double susuCair() {
         return 24000;
     }
 
     @Override
-    int telur() {
+    double telur() {
         return 23000;
     }
 
     @Override
-    int esBatu() {
+    double esBatu() {
         return 2000;
     }
     
     
     //Harga filling dan topping
     @Override
-    public int keju() {
+    public double keju() {
         return 31000;
     }
 
     @Override
-    public int coklat() {
+    public double coklat() {
         return 29000;
     }
 
     @Override
-    public int krimVanila() {
+    public double krimVanila() {
         return 30000;
     }
 
     @Override
-    public int redBean() {
+    public double redBean() {
         return 25000;
     }
 
     @Override
-    public int sosis() {
+    public double sosis() {
         return 80000;
     }
 
     @Override
-    public int smokeBeef() {
+    public double smokeBeef() {
         return 90000;
     }
 
     @Override
-    public int bawangBombay() {
+    public double bawangBombay() {
         return 40000;
     }
     

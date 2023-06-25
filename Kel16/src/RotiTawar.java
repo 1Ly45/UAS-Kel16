@@ -56,7 +56,7 @@ public class RotiTawar extends Roti{
 
     @Override
     int beratPerPcs() {
-S    return 400;
+    return 400;
     }
     
     

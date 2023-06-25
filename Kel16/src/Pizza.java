@@ -7,21 +7,71 @@
  *
  * @author HP
  */
-public class Pizza {
+public class Pizza extends Roti{
     
     int keju(){
         return 30;
     }
     
-    int Sosis(){
+    int sosis(){
         return 50;
     }
     
-    int SmokeBeef(){
+    int smokeBeef(){
         return 50;
     }
     
-    int BawangBombay(){
+    int bawangBombay(){
         return 30;
+    }
+
+    @Override
+    int totalBerat() {
+    return 1950;
+    }
+
+    @Override
+    int beratPerPcs() {
+    return 190;
+    }
+
+    @Override
+    int tepungTerigu() {
+    return 1000;
+    }
+
+    @Override
+    int gulaPasir() {
+   return 100;
+    }
+
+    @Override
+    int butter() {
+    return 100;
+    }
+
+    @Override
+    int ragi() {
+    return 20;
+    }
+
+    @Override
+    int susuBubuk() {
+    return 200;
+    }
+
+    @Override
+    int susuCair() {
+    return 180;
+    }
+
+    @Override
+    int telur() {
+    return 50;
+    }
+
+    @Override
+    int esBatu() {
+    return 300;
     }
 }

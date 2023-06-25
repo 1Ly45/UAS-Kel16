@@ -53,6 +53,11 @@ public class RotiTawar extends Roti{
     int esBatu() {
     return 300;
     }
+
+    @Override
+    int beratPerPcs() {
+S    return 400;
+    }
     
     
 }

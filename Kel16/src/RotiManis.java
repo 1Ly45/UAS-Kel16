@@ -53,6 +53,11 @@ public class RotiManis extends Roti{
     int esBatu() {
         return 400;
     }
+
+    @Override
+    int beratPerPcs() {
+        return 50;
+    }
     
 }
 

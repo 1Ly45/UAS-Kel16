@@ -8,10 +8,10 @@
  * @author HP
  */
 public class RotiManis3 extends RotiManis {
-    int keju(){
+    double keju(){
         return 10;
     }
-    int sosis(){
+    double sosis(){
         return 10;
     }
 }

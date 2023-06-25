@@ -9,7 +9,7 @@
  */
 public class RotiTawar1 extends RotiTawar {
     
-    int coklat(){
+    double coklat(){
       return 80;  
     
 }

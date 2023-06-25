@@ -9,7 +9,7 @@
  */
 public class RotiTawar2 extends RotiTawar {
     
-    int keju (){
+    double keju (){
         return 80;
     }
 }

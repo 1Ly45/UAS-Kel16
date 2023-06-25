@@ -9,69 +9,69 @@
  */
 public class Pizza extends Roti{
     
-    int keju(){
+    double keju(){
         return 30;
     }
     
-    int sosis(){
+    double sosis(){
         return 50;
     }
     
-    int smokeBeef(){
+    double smokeBeef(){
         return 50;
     }
     
-    int bawangBombay(){
+    double bawangBombay(){
         return 30;
     }
 
     @Override
-    int totalBerat() {
+    double totalBerat() {
     return 1950;
     }
 
     @Override
-    int beratPerPcs() {
+    double beratPerPcs() {
     return 190;
     }
 
     @Override
-    int tepungTerigu() {
+    double tepungTerigu() {
     return 1000;
     }
 
     @Override
-    int gulaPasir() {
+    double gulaPasir() {
    return 100;
     }
 
     @Override
-    int butter() {
+    double butter() {
     return 100;
     }
 
     @Override
-    int ragi() {
+    double ragi() {
     return 20;
     }
 
     @Override
-    int susuBubuk() {
+    double susuBubuk() {
     return 200;
     }
 
     @Override
-    int susuCair() {
+    double susuCair() {
     return 180;
     }
 
     @Override
-    int telur() {
-    return 50;
+    double telur() {
+    return 50.0;
     }
 
     @Override
-    int esBatu() {
+    double esBatu() {
     return 300;
     }
 }

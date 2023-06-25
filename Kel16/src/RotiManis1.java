@@ -8,10 +8,10 @@
  * @author HP
  */
 public class RotiManis1 extends RotiManis {
-    int coklat(){
+    double coklat(){
         return 10;
     }
-    int keju(){
+    double keju(){
         return 5;
     }
 }

@@ -10,52 +10,52 @@
 public class RotiTawar extends Roti{
 
     @Override
-    int totalBerat() {
+    double totalBerat() {
         return 2065;
     }
 
     @Override
-    int tepungTerigu() {
+    double tepungTerigu() {
     return 1000;
     }
 
     @Override
-    int gulaPasir() {
+    double gulaPasir() {
     return 125;
     }
 
     @Override
-    int butter() {
+    double butter() {
     return 100;
     }
 
     @Override
-    int ragi() {
+    double ragi() {
    return 20;
     }
 
     @Override
-    int susuBubuk() {
+    double susuBubuk() {
     return 250;
     }
 
     @Override
-    int susuCair() {
+    double susuCair() {
     return 200;
     }
 
     @Override
-    int telur() {
+    double telur() {
    return 70;
     }
 
     @Override
-    int esBatu() {
+    double esBatu() {
     return 300;
     }
 
     @Override
-    int beratPerPcs() {
+    double beratPerPcs() {
     return 400;
     }
     

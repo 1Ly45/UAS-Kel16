@@ -9,6 +9,6 @@
  */
 public abstract class Roti extends Bahan{
     //total berat dari satu adonan
-    abstract int totalBerat();
-    abstract int beratPerPcs();
+    abstract double totalBerat();
+    abstract double beratPerPcs();
 }

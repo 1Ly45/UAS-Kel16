@@ -21,9 +21,9 @@ public class HargaProduk {
     HargaBahan hb = new HargaBahan();
     BeratKemasan bk = new BeratKemasan();
     
-    void hargaRM(){
-        int tepungTerigu = (rm.tepungTerigu()  /bk.tepungTerigu() * hb.tepungTerigu());
-        float gula = (rm.gulaPasir()  / bk.gulaPasir() * hb.gulaPasir());
+    private double hargaRM(){
+        double tepungTerigu = (rm.tepungTerigu()  /bk.tepungTerigu() * hb.tepungTerigu());
+        double gula = (rm.gulaPasir()  / bk.gulaPasir() * hb.gulaPasir());
         double butter = (rm.butter()  /bk.butter() * hb.butter());
         double ragi = (rm.ragi()  /bk.ragi() * hb.ragi());
         double susuBubuk = (rm.susuBubuk()  /bk.susuBubuk() * hb.susuBubuk());
@@ -31,20 +31,84 @@ public class HargaProduk {
         double telur = (rm.telur()  /bk.telur() * hb.telur());
         double esBatu = (rm.esBatu()  /bk.esBatu() * hb.esBatu());
         double hargaAdonan = tepungTerigu + gula + butter + ragi + susuBubuk + susuCair + telur + esBatu;
-        double harga = (hargaAdonan /(rm.totalBerat() / rm.beratPerPcs())) * 140/100; 
-        System.out.println(tepungTerigu);
-        System.out.println(gula);
-        System.out.println(rm.gulaPasir());
-        System.out.println(bk.gulaPasir());
-        System.out.println(hb.gulaPasir());
-        System.out.println(butter);
-        System.out.println(ragi);
-        System.out.println(susuBubuk);
-        System.out.println(susuCair);
-        System.out.println(telur);
-        System.out.println(esBatu);
-        System.out.println(hargaAdonan);
-        System.out.println(harga);
+        double harga = (hargaAdonan /(rm.totalBerat() / rm.beratPerPcs())); 
+        return harga;
+    }
+    private double hargaRT(){
+        double tepungTerigu = (rt.tepungTerigu()  /bk.tepungTerigu() * hb.tepungTerigu());
+        double gula = (rt.gulaPasir()  / bk.gulaPasir() * hb.gulaPasir());
+        double butter = (rt.butter()  /bk.butter() * hb.butter());
+        double ragi = (rt.ragi()  /bk.ragi() * hb.ragi());
+        double susuBubuk = (rt.susuBubuk()  /bk.susuBubuk() * hb.susuBubuk());
+        double susuCair = (rt.susuCair()  /bk.susuCair() * hb.susuCair());
+        double telur = (rt.telur()  /bk.telur() * hb.telur());
+        double esBatu = (rt.esBatu()  /bk.esBatu() * hb.esBatu());
+        double hargaAdonan = tepungTerigu + gula + butter + ragi + susuBubuk + susuCair + telur + esBatu;
+        double harga = (hargaAdonan /(rt.totalBerat() / rt.beratPerPcs())); 
+        return harga;
+    }
+    private double hargaP(){
+        double tepungTerigu = (p.tepungTerigu()  /bk.tepungTerigu() * hb.tepungTerigu());
+        double gula = (p.gulaPasir()  / bk.gulaPasir() * hb.gulaPasir());
+        double butter = (p.butter()  /bk.butter() * hb.butter());
+        double ragi = (p.ragi()  /bk.ragi() * hb.ragi());
+        double susuBubuk = (p.susuBubuk()  /bk.susuBubuk() * hb.susuBubuk());
+        double susuCair = (p.susuCair()  /bk.susuCair() * hb.susuCair());
+        double telur = (p.telur()  /bk.telur() * hb.telur());
+        double esBatu = (p.esBatu()  /bk.esBatu() * hb.esBatu());
+        double keju = (p.keju()  /bk.keju() * hb.keju());
+        double sosis = (p.sosis()  /bk.sosis() * hb.sosis());
+        double smokeBeef = (p.smokeBeef()  /bk.smokeBeef() * hb.smokeBeef());
+        double bawangBombay = (p.bawangBombay()  /bk.bawangBombay() * hb.bawangBombay());
+        double hargaAdonan = tepungTerigu + gula + butter + ragi + susuBubuk + susuCair + telur + esBatu;
+        double hargaAdonanPerPcs = (hargaAdonan /(rt.totalBerat() / rt.beratPerPcs())); 
+        double hargaTopping = keju + sosis + smokeBeef + bawangBombay;
+        double harga = ((hargaAdonan + hargaTopping)) * 140/100; 
+        return Math.ceil (harga);
+    }
+    private double hargaRM1(){
+       double keju = (rm1.keju()  /bk.keju() * hb.keju());
+       double coklat = (rm1.coklat()  /bk.coklat() * hb.coklat());
+       double hargaTopping = keju + coklat;
+       double harga = hargaRM() + hargaTopping;
+       return Math.ceil(harga);
+       
+    }
+    private double hargaRM2(){
+       double redBean = (rm2.redBean()  /bk.redBean() * hb.redBean());
+       double krimVanila = (rm2.krimVanilla()  /bk.krimVanila() * hb.krimVanila());
+       double hargaTopping = redBean + krimVanila;
+       double harga = (hargaRM() + hargaTopping) * 140/100; 
+       return Math.ceil (harga);
+    }
+    private double hargaRM3(){
+       double keju = (rm3.keju()  /bk.keju() * hb.keju());
+       double sosis = (rm3.sosis()  /bk.sosis() * hb.sosis());
+       double hargaTopping = keju + sosis;
+       double harga = (hargaRM() + hargaTopping) * 140/100; 
+       return Math.ceil (harga);
+    }
+    
+    private double hargaRT1(){
+       double coklat = (rt1.coklat()  /bk.coklat() * hb.coklat());
+       double hargaTopping = coklat;
+       double harga = (hargaRT() + hargaTopping) * 140/100; 
+       return Math.ceil (harga);
+    }
+    private double hargaRT2(){
+       double keju = (rt2.keju()  /bk.keju() * hb.keju());
+       double hargaTopping = keju;
+       double harga = (hargaRT() + hargaTopping) * 140/100; 
+       return Math.ceil (harga);
+    }
+    
+    void showHarga(){
+        System.out.println("Harga Roti Manis Varian 1: " + hargaRM1() );
+        System.out.println("Harga Roti Manis Varian 2: " + hargaRM2() );
+        System.out.println("Harga Roti Manis Varian 3: " + hargaRM3() );
+        System.out.println("Harga Roti Tawar Varian 1: " + hargaRT1() );
+        System.out.println("Harga Roti Tawar Varian 2: " + hargaRT2() );
+        System.out.println("Harga Pizza: " + hargaP() );
     }
     
     

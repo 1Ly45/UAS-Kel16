@@ -15,7 +15,6 @@ public class Main {
        
        //memasukan data
        sd.RM1 = 50;
-       sd.RM1 = 50;
        sd.RM2 = 100;
        sd.RM3 = 70;
        sd.RT1 = 20;
